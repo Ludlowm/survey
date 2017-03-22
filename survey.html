@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.0.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Survey</h1>
+    <div class="initially-showing">
+    <form id= "formOne">
+      <div class="form-name">
+        <label for="name">Enter name: </label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-birth">
+        <label for="birth">Enter birth date: </label>
+        <input id="birth" class="form-control" type="date">
+      </div>
+      <div class="form-food">
+        <label for="food">Select favorite food from dropdown: </label>
+        <select class="form-control" id="food">
+          <option value="1">Pizza</option>
+          <option value="2">Chocolate Cake</option>
+          <option value="3">Gummies</option>
+          <option value="4">Chips</option>
+        </select>
+      </div>
+      <div class="form-music">
+        <label for="music">Enter favorite music: </label>
+        <input id="music" class="form-control" type="text">
+      </div>
+      <div class="form-color">
+        <label for="color">Select favorite color: </label>
+        <input id="color" class="form-control" type="color">
+      </div>
+      <button type="submit" class="btn">Submit survey!</button>
+      </form>
+      </div>
+
+    <div class="initially-hidden">
+      <p id="name"></p>
+      <p id="birth"></p>
+      <p id="food"></p>
+      <p id="music"></p>
+      <p id="color"></p>
+    </div>
+  </div>
+</body>
+</html>
